@@ -1,6 +1,6 @@
 var net = require('net');
 var sockets = [];
-var port = 8000;
+var port = 8080;
 var guestId = 0;
 
 var server = net.createServer(function(socket) {
