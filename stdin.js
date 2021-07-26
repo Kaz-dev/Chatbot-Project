@@ -7,4 +7,3 @@ stdin.addListener("data", function(message) {
     console.log("You ==> " + message);
     console.log("Bot ==> "+Chatbot.ChatbotReply(message))
   });
-
