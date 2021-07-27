@@ -88,9 +88,21 @@ app.get('/', function (req, res) {
         console.log('Error running count. Message:\n'+err);
       }
       res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('index.js', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('constants.js', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('speech.js', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('bot.png', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('user.png', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('bot-mini.png', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
     res.render('index.html', { pageCountMessage : null});
+    res.render('index.js', { pageCountMessage : null});
+    res.render('constants.js', { pageCountMessage : null});
+    res.render('speech.js', { pageCountMessage : null});
+    res.render('bot.png', { pageCountMessage : null});
+    res.render('user.png', { pageCountMessage : null});
+    res.render('bot-mini.png', { pageCountMessage : null});
   }
 });
 
